@@ -1,12 +1,12 @@
 const ProfileInfo = () => {
     return (
         <div className='w-full justify-center flex flex-col items-center my-40'>
-            <div className='bg-[url(/images/gray_background.jpg)] bg-cover bg-no-repeat mt-52 flex-row flex rounded-2xl  w-430 py-20'>
-                <div className='w-140 gap-8 flex justify-center flex-col mt-8'>
-                    <div className='ml-auto mr-auto w-100 h-100 rounded-2xl '>
+            <div className='bg-[url(/images/gray_background.jpg)] bg-cover bg-no-repeat mt-52 flex-col flex rounded-2xl py-20 max-w-[1600px] lg:flex-row gap-16 lg:gap-4'>
+                <div className='mx-8 gap-8 flex justify-center flex-col items-center lg:justify-start'>
+                    <div className='rounded-2xl w-52 h-52 sm:w-72 sm:h-72 md:w-100 md:h-100'>
                         {/* 그라데이션 삽입 */}
-                        <div className='bg-gradient-to-r from-slate-700 to-slate-300 w-100 h-100 relative rounded-2xl'>
-                            <div className='w-100 h-100 bg-pink-400 absolute left-6 bottom-6 rounded-2xl overflow-hidden'>
+                        <div className='bg-gradient-to-r from-slate-700 to-slate-300 w-52 h-52 sm:w-72 sm:h-72 relative rounded-2xl md:w-100 md:h-100'>
+                            <div className='w-52 h-52 sm:w-72 sm:h-72 bg-pink-400 absolute left-6 bottom-6 rounded-2xl overflow-hidden md:w-100 md:h-100'>
                                 <img src='/images/komi.png' alt='komi'></img>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ const ProfileInfo = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-full grid grid-cols-6 gap-x-4 gap-y-10 content-start text-white whitespace-nowrap font-mono text-xl items-center'>
+                    <div className='w-full grid grid-cols-2 gap-x-4 gap-y-10 content-start text-white whitespace-nowrap font-mono text-xl items-center xl:grid-cols-6'>
                         <p>Name</p>
                         <p>Jinwoo Yang</p>
                         <p>Age</p>
