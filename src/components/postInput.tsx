@@ -3,6 +3,7 @@ import React from 'react'
 import { editingPostIndexAtom } from '@/atoms/post'
 import { myPostAtom } from '@/atoms/post'
 import { useForm } from 'react-hook-form'
+import { toast } from 'react-toastify'
 
 const PostInput = () => {
     const [posts, setPosts] = useAtom(myPostAtom)
@@ -28,8 +29,10 @@ const PostInput = () => {
             updatedPosts[editingIndex] = data
             setPosts(updatedPosts)
             setEditingIndex(-1)
+            toast.success('The post has been successfully updated')
         } else {
             setPosts([...posts, data])
+            toast.success('A new post has been successfully added')
         }
         reset()
     }
@@ -52,14 +55,14 @@ const PostInput = () => {
                 type="text"
                 {...register('CONTENTS')}
                 required
-                placeholder="CONTENTS"
+                placeholder="COMMENTS"
             />
             {errors.CONTENTS && <p>내용을 작성해주세요</p>}
             <button
                 className="h-14 w-28 rounded-md bg-indigo-200 "
                 type="submit"
             >
-                {editingIndex !== -1 ? 'Save' : '등록'}
+                {editingIndex !== -1 ? 'Save' : 'Submit'}
             </button>
         </form>
     )

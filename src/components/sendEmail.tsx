@@ -23,7 +23,7 @@ const SendEmail = () => {
                         <div className=" flex-1 w-full">
                             <div className=" h-14 flex flex-1">
                                 <div className="text-2xl pl-7">
-                                    Comment Here
+                                    Comment Me Here
                                 </div>
                             </div>
                             <div className="flex-1">

@@ -23,7 +23,7 @@ const Post = () => {
         <div className="w-full  font-mono text-white">
             {posts.length === 0 ? (
                 <p className="text-center text-xl text-white">
-                    No posts available (backend not implemented)
+                    No Posts Available (Backend Not Implemented)
                 </p>
             ) : (
                 posts.map((post, index) => (
