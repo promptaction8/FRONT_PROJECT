@@ -4,6 +4,7 @@ import ProfileCard from '@/components/profileCard'
 import ProfileInfo from '@/components/profileInfo'
 import SendEmail from '@/components/sendEmail'
 import Career from '@/components/career'
+import Footer from '@/components/footer'
 
 const PortfolioPage = () => {
     return (
@@ -20,6 +21,8 @@ const PortfolioPage = () => {
                 <Career />
                 {/* 이메일 보내기 */}
                 <SendEmail />
+                {/* footer */}
+                <Footer />
             </div>
         </>
     )

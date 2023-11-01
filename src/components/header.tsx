@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <div className="flex relative shrink-0 flex-row  min-w-full h-20">
+        <header className="flex relative shrink-0 flex-row  min-w-full h-20">
             <div className="flex flex-row left-0 h-full w-56">
                 <div className="mt-2">
                     <div>
@@ -67,7 +67,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 
